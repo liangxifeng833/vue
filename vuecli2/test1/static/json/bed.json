@@ -1,0 +1,14 @@
+[
+    {
+        "goodNamd":"木床",
+        "img":"../static/images/chuang.jpg"
+    },
+    {
+        "goodNamd":"凳子",
+        "img":"../static/images/deng.jpg"
+    },
+    {
+        "goodNamd":"椅子",
+        "img":"../static/images/yizi-1.jpg"
+    }
+]
