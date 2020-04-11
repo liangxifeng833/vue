@@ -9,8 +9,8 @@
         <ul class="menu"> 
             <li @click="clickBed">木床</li>
             <li @click="clickDoor">木门</li>
-            <li @click="clickYu">卫浴</li>
-            <li @click="clickDesk">桌椅</li>
+            <li>卫浴</li>
+            <li>桌椅</li>
         </ul>
     </div>
 </template>

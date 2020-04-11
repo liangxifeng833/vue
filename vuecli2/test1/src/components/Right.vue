@@ -6,17 +6,19 @@
     -->
     <div class="main">
         <!--{{menuType}}-->
-        <div v-if="menuType==1">
-            1111
+        <div v-if="(menuType==1) || (menuType==0)">
+            <goodsList :goodId="1"></goodsList>
         </div>
         <div v-else-if="menuType==2">
-            2222
+            <goodsList :goodId="2"></goodsList>
         </div>
     </div>
 </template>
 <script type="text/javascript">
     //引入消息总线组件
     import Msg from './msg.js'
+    //引入商品列表组件
+    import goodsList from './GoodsList.vue'
     export default {
         data(){
             return {
@@ -33,7 +35,9 @@
                 //并不是vue文件,所以要使用副本_this
                _this.menuType=m; 
             })
-            
+        },
+        components:{
+            goodsList
         }
     }
 </script>

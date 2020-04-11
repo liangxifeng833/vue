@@ -12,7 +12,7 @@
         </div>
         <div class="right">
             <div class="top">
-                <img src="../assets/images/title.png" />
+                <img src="../assets/title.png" />
             </div>
             <div class="buttom">
                 <!-- 引入Right组件(页面) -->
