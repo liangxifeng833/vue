@@ -10,6 +10,7 @@ cd test1
 npm install
 
 # 运行node服务,通过 localhost:8080 访问项目
+* 实际是在node环境执行build/dev-server.js, dev-server.js会去拿到config中的端口等配置，通过express起一个服务，通过插件自动打开浏览器，加载webpack编译后放在内存的bundle
 npm run dev
 
 # 最开始的测试页面(组件之间跳转演示)
@@ -19,6 +20,8 @@ http://localhost:8081/index
 http://localhost:8081/first
 
 # 构建页面到生产环境
+* 实际上执行了build/build.js,通过webpack的一系列配置及插件，将文件打包合并丑化，并创建dist目录，放置编译打包后的文件，这将是未来用在生产环境的包。
+* dist目录下的index.html和static放到部署服务器即可
 npm run build
 
 # build for production and view the bundle analyzer report
