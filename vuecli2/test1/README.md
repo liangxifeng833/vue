@@ -1,17 +1,24 @@
 # test1
 
-> A Vue.js project
+> 我的VueCli2学习测试小项目test1
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 运行该项目之前需要安装依赖
+cd test1
 npm install
 
-# serve with hot reload at localhost:8080
+# 运行node服务,通过 localhost:8080 访问项目
 npm run dev
 
-# build for production with minification
+# 最开始的测试页面(组件之间跳转演示)
+http://localhost:8081/index
+
+# 左侧点击导航,右侧显示列表(设计组件之间传递参数)
+http://localhost:8081/first
+
+# 构建页面到生产环境
 npm run build
 
 # build for production and view the bundle analyzer report
