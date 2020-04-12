@@ -7,9 +7,11 @@ const path = require('path')
 module.exports = {
   dev: {
 
-    // Paths
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    // Paths liangxifeng 2020-04-12 修改
+    //assetsSubDirectory: 'static',
+    //npm run dev 时把所有的静态资源模拟加载到 dist/lxftest/static文件夹下
+    assetsSubDirectory: '../dist',
+    assetsPublicPath: '/lxftest/static',
     proxyTable: {},
 
     // Various Dev Server settings
@@ -37,13 +39,15 @@ module.exports = {
   },
 
   build: {
-    // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    // Paths liangxifeng 2020-04-12
+    // Template for index.html 模板文件打包到 dist/lxftest目录中
+    index: path.resolve(__dirname, '../dist/lxftest/index.html'),
 
-    // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    // Paths liangxifeng 2020-04-12 
+    //把所有的静态资源打包到 dist/lxftest/static文件夹下
+    assetsSubDirectory: 'lxftest/static',
+    assetsPublicPath: '/',
 
     /**
      * Source Maps

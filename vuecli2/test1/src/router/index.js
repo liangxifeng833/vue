@@ -11,10 +11,10 @@ import First from '@/components/First'
 Vue.use(Router)
 
 export default new Router({
-  //页面路由方式去掉#号,改为hitory模式
-  //mode: 'history',
   //npm run build 后将static和inde.html放入网站的lxftest目录,并非根目录的情况
-  //base: 'lxftest',
+  base: '/lxftest',
+  //页面路由方式去掉#号,改为hitory模式
+  mode: 'history',
   routes: [
     //默认首页
     {

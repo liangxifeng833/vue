@@ -38,9 +38,10 @@
             //get属于事件,在事件中使用this就属于事件本身了,不属于vue文件
             var url = "";
             if(_this.goodId == 1){
-                url = "../static/json/bed.json";
+                url = _this.$subDir+"/static/json/bed.json";
             }else if(_this.goodId == 2) {
-                url = "../static/json/door.json";
+                //url = "../static/json/door.json";
+                url = _this.$subDir+"/static/json/door.json";
             }
             this.$http.get(url).then(function(res){
                 //res.data中的data是关键字,获取res中的数据即后台返回的商品列表json
@@ -64,9 +65,9 @@
                 var _this = this;
                 var url = "";
                 if(_this.goodId == 1){
-                    url = "../static/json/bed.json";
+                    url = _this.$subDir+"/static/json/bed.json";
                 }else if(_this.goodId == 2) {
-                    url = "../static/json/door.json";
+                    url = _this.$subDir+"/static/json/door.json";
                 }
                 _this.$http.get(url).then(function(res){
                     //res.data中的data是关键字,获取res中的数据即后台返回的商品列表json

@@ -1,14 +1,14 @@
 [
     {
         "goodNamd":"实木门",
-        "img":"../static/images/men.jpg"
+        "img":"/lxftest/static/images/men.jpg"
     },
     {
         "goodNamd":"灶具",
-        "img":"../static/images/zaoju.jpg"
+        "img":"/lxftest/static/images/zaoju.jpg"
     },
     {
         "goodNamd":"地板",
-        "img":"../static/images/diban.jpg"
+        "img":"/lxftest/static/images/diban.jpg"
     }
 ]
